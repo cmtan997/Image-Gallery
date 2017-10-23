@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+<title>Image Gallery</title>
+<style type="text/css"> <!-- here is to style the css for the div -->
+
+	body {
+	height: 100%;
+	background-color: black;
+	margin: 0;
+	}
+	.bg{
+	background-image: url("images/Car.jpg");
+	height:100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+	
+	.thumbnails img {
+	height: 80px;
+	border: 4px solid #555;
+	padding: 1px;
+	margin: 10px;
+	}
+
+	.thumbnails img:hover {
+	border: 4px solid #00ccff;
+	cursor:pointer;
+	}
+
+	.preview img {
+	border: 4px solid #444;
+	padding: 3px;
+	width: 800px;
+	}
+</style>
+</head>
+
+<body>
+<div class="bg" align="center"> <!-- div for the car image background --> 
+<h3>Image Gallery</h3>
+<div class="thumbnails"> <!--this is to show the small thumbnails--> 
+<img onmouseover="getElementById('preview').src=getElementById('img1').src" id="img1" src="images/P.jpg" title="Porsche" /><!--title to show info when mouse hover over the thumbnail--> 
+<img onmouseover="getElementById('preview').src=getElementById('img2').src" id="img2" src="images/M.jpg" title="Mercedes Benz" />
+<img onmouseover="getElementById('preview').src=getElementById('img3').src" id="img3" src="images/AM.jpg" title="Aston Martin" />
+<img onmouseover="getElementById('preview').src=getElementById('img4').src" id="img4" src="images/B.jpg" title="Bugatti" />
+<img onmouseover="getElementById('preview').src=getElementById('img5').src" id="img5" src="images/F.jpg" title="Ferrari" />
+<img onmouseover="getElementById('preview').src=getElementById('img6').src" id="img6" src="images/I8.jpg" title="BMW I8" />
+<img onmouseover="getElementById('preview').src=getElementById('img7').src" id="img7" src="images/K.jpg" title="Koenigsegg One:1" />
+<img onmouseover="getElementById('preview').src=getElementById('img8').src" id="img8" src="images/L.jpg" title="Lamborghini" /> 
+<img onmouseover="getElementById('preview').src=getElementById('img9').src" id="img9" src="images/N.jpg" title="Nissan GTR" />	
+</div>
+
+<div class="preview" align="center"> <!-- this is to show the image with width of 800 px --> 
+	<<img id="preview" title="The image you choosen"/>
+</div>
+</div>
+
+</body>
+</html>
